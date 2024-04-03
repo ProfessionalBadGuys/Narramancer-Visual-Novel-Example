@@ -19,9 +19,7 @@ MonoBehaviour:
     value: 
   properties:
   - property: {fileID: 11400000, guid: 2bb4c661e4d6fbb449d3bdd1e5ee4909, type: 2}
-  stats:
-  - stat: {fileID: 11400000, guid: 4f76948543c8a7943ad7077a1fe3d555, type: 2}
-    value: 0
+  stats: []
   relationships:
   - relationship: {fileID: 11400000, guid: f3c9275fe9fe7e047ad7b7364345b433, type: 2}
     other: {fileID: 11400000, guid: 0703f9c3dfb74ea469c72b3cab353917, type: 2}
@@ -49,6 +47,7 @@ MonoBehaviour:
       typeName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       list: 0
+      canBeList: 1
     name: normal
     id: 23a0550c-e730-4bc8-b386-0557fc6e8674
     assignment:
@@ -68,6 +67,7 @@ MonoBehaviour:
       typeName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       list: 0
+      canBeList: 1
     name: textColor
     id: 23a0550c-e730-4bc8-b386-0557fc6e8674
     assignment:
@@ -86,6 +86,7 @@ MonoBehaviour:
       typeName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       list: 0
+      canBeList: 1
     name: talk
     id: 23a0550c-e730-4bc8-b386-0557fc6e8674
     assignment:

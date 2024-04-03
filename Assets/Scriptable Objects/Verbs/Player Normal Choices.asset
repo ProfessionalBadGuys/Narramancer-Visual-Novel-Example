@@ -1358,7 +1358,7 @@ MonoBehaviour:
   - {fileID: 3169359170520364966}
   - {fileID: 811094925321915205}
   - {fileID: 8492815664775476148}
-  panOffset: {x: -1464.317, y: -104.11345}
+  panOffset: {x: -1015.43475, y: 55.556087}
   inputs: []
   outputs: []
   references:
