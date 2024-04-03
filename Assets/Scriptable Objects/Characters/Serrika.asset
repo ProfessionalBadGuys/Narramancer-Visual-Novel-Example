@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f1b1154b7b40949ba6fa7f16aa9106, type: 3}
+  m_Name: Serrika
+  m_EditorClassIdentifier: 
+  uid:
+    Value: 48890297-9032-469e-a37c-67746859da59
+  displayName:
+    activated: 0
+    value: 
+  properties:
+  - property: {fileID: 11400000, guid: 2bb4c661e4d6fbb449d3bdd1e5ee4909, type: 2}
+  stats:
+  - stat: {fileID: 11400000, guid: 4f76948543c8a7943ad7077a1fe3d555, type: 2}
+    value: 0
+  relationships:
+  - relationship: {fileID: 11400000, guid: f3c9275fe9fe7e047ad7b7364345b433, type: 2}
+    other: {fileID: 11400000, guid: 0703f9c3dfb74ea469c72b3cab353917, type: 2}
+    sourceOrDestination: 0
+  startingBlackboard:
+    ints:
+      keys: []
+      values: 
+    bools:
+      keys: []
+      values: 
+    floats:
+      keys: []
+      values: []
+    strings:
+      keys: []
+      values: []
+    unityObjects:
+      keys: []
+      values: []
+    objects:
+      keys: []
+  blackboardAssignments:
+  - type:
+      typeName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      list: 0
+    name: normal
+    id: 23a0550c-e730-4bc8-b386-0557fc6e8674
+    assignment:
+      name: 
+      id: 
+      type: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      boolValue: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      color: {r: 0, g: 0, b: 0, a: 0}
+      vector2: {x: 0, y: 0}
+      vector3: {x: 0, y: 0, z: 0}
+      objectValue: {fileID: 21300000, guid: 146725ccaa58a6d41bb9e73d86823d7b, type: 3}
+  - type:
+      typeName: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      list: 0
+    name: textColor
+    id: 23a0550c-e730-4bc8-b386-0557fc6e8674
+    assignment:
+      name: 
+      id: 
+      type: color
+      boolValue: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      color: {r: 0.8396226, g: 0.36815345, b: 0.19406372, a: 1}
+      vector2: {x: 0, y: 0}
+      vector3: {x: 0, y: 0, z: 0}
+      objectValue: {fileID: 21300000, guid: 146725ccaa58a6d41bb9e73d86823d7b, type: 3}
+  - type:
+      typeName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      list: 0
+    name: talk
+    id: 23a0550c-e730-4bc8-b386-0557fc6e8674
+    assignment:
+      name: 
+      id: 
+      type: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      boolValue: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      color: {r: 0.8396226, g: 0.36815345, b: 0.19406372, a: 1}
+      vector2: {x: 0, y: 0}
+      vector3: {x: 0, y: 0, z: 0}
+      objectValue: {fileID: 21300000, guid: cf07b17bc040d374a8ba23762ab64fb0, type: 3}

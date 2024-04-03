@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f1b1154b7b40949ba6fa7f16aa9106, type: 3}
+  m_Name: Bed Room
+  m_EditorClassIdentifier: 
+  uid:
+    Value: c6fbb8b3-aa03-4bde-aa1e-48f31f3858d7
+  displayName:
+    activated: 0
+    value: 
+  properties: []
+  stats: []
+  relationships:
+  - relationship: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+    other: {fileID: 11400000, guid: 0703f9c3dfb74ea469c72b3cab353917, type: 2}
+    sourceOrDestination: 0
+  startingBlackboard:
+    ints:
+      keys: []
+      values: 
+    bools:
+      keys: []
+      values: 
+    floats:
+      keys: []
+      values: []
+    strings:
+      keys: []
+      values: []
+    unityObjects:
+      keys: []
+      values: []
+    objects:
+      keys: []
+  blackboardAssignments:
+  - type:
+      typeName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      list: 0
+    name: background
+    id: 75c6e3c5-32d8-46ec-92c1-029a1357ac34
+    assignment:
+      name: 
+      id: 
+      type: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      boolValue: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      color: {r: 0, g: 0, b: 0, a: 0}
+      vector2: {x: 0, y: 0}
+      vector3: {x: 0, y: 0, z: 0}
+      objectValue: {fileID: 21300000, guid: 8ae77d4187205ba46ae9bd9b0be77f84, type: 3}
+  - type:
+      typeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      list: 0
+    name: music
+    id: 75c6e3c5-32d8-46ec-92c1-029a1357ac34
+    assignment:
+      name: 
+      id: 
+      type: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      boolValue: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      color: {r: 0, g: 0, b: 0, a: 0}
+      vector2: {x: 0, y: 0}
+      vector3: {x: 0, y: 0, z: 0}
+      objectValue: {fileID: 8300000, guid: 0eac0858cd828e4498e18cf2df7bc481, type: 3}

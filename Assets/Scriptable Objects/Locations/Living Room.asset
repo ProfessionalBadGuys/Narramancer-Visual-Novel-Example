@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f1b1154b7b40949ba6fa7f16aa9106, type: 3}
+  m_Name: Living Room
+  m_EditorClassIdentifier: 
+  uid:
+    Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+  displayName:
+    activated: 0
+    value: 
+  properties: []
+  stats: []
+  relationships:
+  - relationship: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+    other: {fileID: 11400000, guid: 0c80826c0f8d9ef4ebd1c87ace0acda0, type: 2}
+    sourceOrDestination: 0
+  - relationship: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+    other: {fileID: 11400000, guid: 46dce4b622c5a65478899efce86e3d21, type: 2}
+    sourceOrDestination: 0
+  startingBlackboard:
+    ints:
+      keys: []
+      values: 
+    bools:
+      keys: []
+      values: 
+    floats:
+      keys: []
+      values: []
+    strings:
+      keys: []
+      values: []
+    unityObjects:
+      keys: []
+      values: []
+    objects:
+      keys: []
+  blackboardAssignments:
+  - type:
+      typeName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      list: 0
+    name: background
+    id: 04f207e6-1182-4fa1-af70-bbe97cfad41c
+    assignment:
+      name: 
+      id: 
+      type: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      boolValue: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      color: {r: 0, g: 0, b: 0, a: 0}
+      vector2: {x: 0, y: 0}
+      vector3: {x: 0, y: 0, z: 0}
+      objectValue: {fileID: 21300000, guid: 927b6d0128fff86449f7009905dda189, type: 3}
+  - type:
+      typeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      list: 0
+    name: music
+    id: 04f207e6-1182-4fa1-af70-bbe97cfad41c
+    assignment:
+      name: 
+      id: 
+      type: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      boolValue: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      color: {r: 0, g: 0, b: 0, a: 0}
+      vector2: {x: 0, y: 0}
+      vector3: {x: 0, y: 0, z: 0}
+      objectValue: {fileID: 8300000, guid: 33c8e7158f01d7741afeecf1b6169789, type: 3}

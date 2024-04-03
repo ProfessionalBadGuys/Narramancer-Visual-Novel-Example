@@ -1,0 +1,473 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77318c298080d8439f08a93f695dc61, type: 3}
+  m_Name: Narramancer
+  m_EditorClassIdentifier: 
+  runOnGameStart: 1
+  nouns:
+    list: []
+  adjectives: []
+  runAtStart:
+    list: []
+  recentlyOpenedGraphs:
+  - {fileID: 11400000, guid: e36a9b09a465b124384f95cf86eb8240, type: 2}
+  - {fileID: -4693595284914339535, guid: e36a9b09a465b124384f95cf86eb8240, type: 2}
+  globalVariables: []
+  storyInstance:
+    instances:
+    - displayName: Serrika
+      uid:
+        Value: 48890297-9032-469e-a37c-67746859da59
+      noun: {fileID: 11400000, guid: 91702456b348f594ab381fd048ef7f01, type: 2}
+      properties:
+      - adjective: {fileID: 11400000, guid: 2bb4c661e4d6fbb449d3bdd1e5ee4909, type: 2}
+      stats:
+      - adjective: {fileID: 11400000, guid: 4f76948543c8a7943ad7077a1fe3d555, type: 2}
+        value: 0
+      relationships:
+      - adjective: {fileID: 11400000, guid: f3c9275fe9fe7e047ad7b7364345b433, type: 2}
+        source:
+          Value: 48890297-9032-469e-a37c-67746859da59
+        destination:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      blackboard:
+        ints:
+          keys: []
+          values: 
+        bools:
+          keys: []
+          values: 
+        floats:
+          keys: []
+          values: []
+        strings:
+          keys: []
+          values: []
+        unityObjects:
+          keys:
+          - normal
+          values:
+          - {fileID: 21300000, guid: 146725ccaa58a6d41bb9e73d86823d7b, type: 3}
+        objects:
+          keys: []
+    - displayName: Bed Room
+      uid:
+        Value: c6fbb8b3-aa03-4bde-aa1e-48f31f3858d7
+      noun: {fileID: 11400000, guid: 46dce4b622c5a65478899efce86e3d21, type: 2}
+      properties: []
+      stats: []
+      relationships:
+      - adjective: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+        source:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+        destination:
+          Value: c6fbb8b3-aa03-4bde-aa1e-48f31f3858d7
+      - adjective: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+        source:
+          Value: c6fbb8b3-aa03-4bde-aa1e-48f31f3858d7
+        destination:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      blackboard:
+        ints:
+          keys: []
+          values: 
+        bools:
+          keys: []
+          values: 
+        floats:
+          keys: []
+          values: []
+        strings:
+          keys: []
+          values: []
+        unityObjects:
+          keys:
+          - background
+          values:
+          - {fileID: 21300000, guid: 8ae77d4187205ba46ae9bd9b0be77f84, type: 3}
+        objects:
+          keys: []
+    - displayName: Living Room
+      uid:
+        Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      noun: {fileID: 11400000, guid: 0703f9c3dfb74ea469c72b3cab353917, type: 2}
+      properties: []
+      stats: []
+      relationships:
+      - adjective: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+        source:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+        destination:
+          Value: c6fbb8b3-aa03-4bde-aa1e-48f31f3858d7
+      - adjective: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+        source:
+          Value: b473a09a-415f-49cd-bb37-00195c35c0ff
+        destination:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      - adjective: {fileID: 11400000, guid: f3c9275fe9fe7e047ad7b7364345b433, type: 2}
+        source:
+          Value: 946830e5-de6e-4fb6-81bb-40d6e47afd2d
+        destination:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      - adjective: {fileID: 11400000, guid: f3c9275fe9fe7e047ad7b7364345b433, type: 2}
+        source:
+          Value: 48890297-9032-469e-a37c-67746859da59
+        destination:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      - adjective: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+        source:
+          Value: c6fbb8b3-aa03-4bde-aa1e-48f31f3858d7
+        destination:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      - adjective: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+        source:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+        destination:
+          Value: b473a09a-415f-49cd-bb37-00195c35c0ff
+      - adjective: {fileID: 11400000, guid: f3c9275fe9fe7e047ad7b7364345b433, type: 2}
+        source:
+          Value: ea2d2525-15bc-44eb-a360-be8a94392d4a
+        destination:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      blackboard:
+        ints:
+          keys: []
+          values: 
+        bools:
+          keys: []
+          values: 
+        floats:
+          keys: []
+          values: []
+        strings:
+          keys: []
+          values: []
+        unityObjects:
+          keys:
+          - background
+          values:
+          - {fileID: 21300000, guid: 927b6d0128fff86449f7009905dda189, type: 3}
+        objects:
+          keys: []
+    - displayName: Outside Cabin
+      uid:
+        Value: b473a09a-415f-49cd-bb37-00195c35c0ff
+      noun: {fileID: 11400000, guid: 0c80826c0f8d9ef4ebd1c87ace0acda0, type: 2}
+      properties: []
+      stats: []
+      relationships:
+      - adjective: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+        source:
+          Value: b473a09a-415f-49cd-bb37-00195c35c0ff
+        destination:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      - adjective: {fileID: 11400000, guid: 62e5c05fcca74c4499c8b5b8b0bedda2, type: 2}
+        source:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+        destination:
+          Value: b473a09a-415f-49cd-bb37-00195c35c0ff
+      blackboard:
+        ints:
+          keys: []
+          values: 
+        bools:
+          keys: []
+          values: 
+        floats:
+          keys: []
+          values: []
+        strings:
+          keys: []
+          values: []
+        unityObjects:
+          keys:
+          - background
+          values:
+          - {fileID: 21300000, guid: 7a3ab6968fd4e8c4aaabd7a5e154ac2c, type: 3}
+        objects:
+          keys: []
+    - displayName: Player
+      uid:
+        Value: ea2d2525-15bc-44eb-a360-be8a94392d4a
+      noun: {fileID: 11400000, guid: 8f4f74a6c9234ee488d02f3ecad88011, type: 2}
+      properties: []
+      stats: []
+      relationships:
+      - adjective: {fileID: 11400000, guid: f3c9275fe9fe7e047ad7b7364345b433, type: 2}
+        source:
+          Value: ea2d2525-15bc-44eb-a360-be8a94392d4a
+        destination:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      blackboard:
+        ints:
+          keys: []
+          values: 
+        bools:
+          keys: []
+          values: 
+        floats:
+          keys: []
+          values: []
+        strings:
+          keys: []
+          values: []
+        unityObjects:
+          keys: []
+          values: []
+        objects:
+          keys: []
+    - displayName: Evelyn
+      uid:
+        Value: 946830e5-de6e-4fb6-81bb-40d6e47afd2d
+      noun: {fileID: 11400000, guid: d980e24e2d3235f48949ec0dd358f4e2, type: 2}
+      properties:
+      - adjective: {fileID: 11400000, guid: 2bb4c661e4d6fbb449d3bdd1e5ee4909, type: 2}
+      stats:
+      - adjective: {fileID: 11400000, guid: 4f76948543c8a7943ad7077a1fe3d555, type: 2}
+        value: 0
+      relationships:
+      - adjective: {fileID: 11400000, guid: f3c9275fe9fe7e047ad7b7364345b433, type: 2}
+        source:
+          Value: 946830e5-de6e-4fb6-81bb-40d6e47afd2d
+        destination:
+          Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
+      blackboard:
+        ints:
+          keys: []
+          values: 
+        bools:
+          keys: []
+          values: 
+        floats:
+          keys: []
+          values: []
+        strings:
+          keys: []
+          values: []
+        unityObjects:
+          keys:
+          - normal
+          values:
+          - {fileID: 21300000, guid: b7340d1d44bae41418d356447ef1c417, type: 3}
+        objects:
+          keys: []
+    blackboard:
+      ints:
+        keys: []
+        values: 
+      bools:
+        keys: []
+        values: 
+      floats:
+        keys: []
+        values: []
+      strings:
+        keys: []
+        values: []
+      unityObjects:
+        keys: []
+        values: []
+      objects:
+        keys: []
+    saveTable:
+      ints:
+        keys: []
+        values: 
+      bools:
+        keys: []
+        values: 
+      floats:
+        keys: []
+        values: []
+      strings:
+        keys: []
+        values: []
+      unityObjects:
+        keys: []
+        values: []
+      objects:
+        keys: []
+    timers:
+    - timeStamp: 90.29897
+      promise:
+        doneCallbacks:
+        - serializedTarget:
+            Name: 
+            isNullObject: 0
+            objectType:
+              typeName: Narramancer.WaitNode+<>c__DisplayClass1_0, Narramancer, Version=0.0.0.0,
+                Culture=neutral, PublicKeyToken=null
+              genericTypes: []
+            unityObject: {fileID: 0}
+            manuallySerializedMembers:
+            - Name: runner
+              isNullObject: 0
+              objectType:
+                typeName: Narramancer.NodeRunner, Narramancer, Version=0.0.0.0, Culture=neutral,
+                  PublicKeyToken=null
+                genericTypes: []
+              unityObject: {fileID: 0}
+              manuallySerializedMembers: []
+              collectionObjects: []
+            collectionObjects: []
+          serializedMethod:
+            declaringType:
+              typeName: Narramancer.WaitNode+<>c__DisplayClass1_0, Narramancer, Version=0.0.0.0,
+                Culture=neutral, PublicKeyToken=null
+              genericTypes: []
+            methodName: <Run>b__0
+            parameters: []
+            genericTypes: []
+            flags: 20
+    nodeRunners:
+      keys:
+      - Player Normal Choices
+      - Update Characters Passively
+      values:
+      - runningNode: {fileID: 0}
+        queuedNodes: []
+        promise:
+          doneCallbacks: []
+        blackboard:
+          ints:
+            keys:
+            - index 25868
+            - index 26006
+            values: 0000000000000000
+          bools:
+            keys: []
+            values: 
+          floats:
+            keys: []
+            values: []
+          strings:
+            keys: []
+            values: []
+          unityObjects:
+            keys: []
+            values: []
+          objects:
+            keys:
+            - Element 25870
+            - location (NounInstance) 6433817f-f285-4432-8015-aa2fbe4ce624
+            - character (NounInstance) 0b0b1b42-9032-45fd-8384-3137245aac09
+            - location (NounInstance) 6adb6bac-6d82-42dd-8686-bd754e012111
+            - element (NounInstance) cef43aa1-b3d1-4797-bcb2-007b1ad6dbc3
+            - character (NounInstance) c57dc717-0cc7-4b36-81bd-3262d525de3d
+            - currentElement 26006
+        recentlyRunNodes:
+        - name: Ran
+          node: {fileID: -3992264048097808262, guid: 3f85d1a56cbf8504290e17f994c3efcd, type: 2}
+          timeStamp: 3.311141
+        - name: Ran
+          node: {fileID: -804361078870257704, guid: 3f85d1a56cbf8504290e17f994c3efcd, type: 2}
+          timeStamp: 2.0147543
+        - name: Ran
+          node: {fileID: -7680625518454251046, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 2.0147543
+        - name: Ran
+          node: {fileID: -7677483842141976843, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 2.6310945
+        - name: Ran
+          node: {fileID: -6412846250425312713, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 2.6310945
+        - name: Ran
+          node: {fileID: 5152824797298664590, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 2.6310945
+        - name: Ran
+          node: {fileID: -6687132912231400148, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 2.6310945
+        - name: Ran
+          node: {fileID: 4962163516895458698, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 2.6310945
+        - name: Ran
+          node: {fileID: 5132458137109637161, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 2.9702158
+        - name: Ran
+          node: {fileID: -4731459694566622200, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 2.9702158
+        - name: Ran
+          node: {fileID: -7537651983727898926, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 2.9702158
+        - name: Ran
+          node: {fileID: -1794300272742319299, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 3.311141
+        - name: Ran
+          node: {fileID: 1921023231798706594, guid: faed3044ee1dd64408be0d0b22abe2c2, type: 2}
+          timeStamp: 3.311141
+        - name: Ran
+          node: {fileID: -1567967662555450377, guid: faed3044ee1dd64408be0d0b22abe2c2, type: 2}
+          timeStamp: 3.311141
+        - name: Ran
+          node: {fileID: -6145708120194966559, guid: e03ef6cb256cf7340927313ce122b11f, type: 2}
+          timeStamp: 3.311141
+        - name: Ran
+          node: {fileID: -1628051218147212813, guid: 5f25063de7dcb614b8e22b4815c5f7ae, type: 2}
+          timeStamp: 3.311141
+        - name: Ran
+          node: {fileID: 1623800531075416529, guid: 5f25063de7dcb614b8e22b4815c5f7ae, type: 2}
+          timeStamp: 3.311141
+        - name: Ran
+          node: {fileID: -4477957307265219728, guid: 5f25063de7dcb614b8e22b4815c5f7ae, type: 2}
+          timeStamp: 3.311141
+        - name: Ran
+          node: {fileID: 6603537025221656461, guid: 5f25063de7dcb614b8e22b4815c5f7ae, type: 2}
+          timeStamp: 3.311141
+        - name: Ran
+          node: {fileID: 2845631847550165624, guid: 5f25063de7dcb614b8e22b4815c5f7ae, type: 2}
+          timeStamp: 3.311141
+        - name: Ran
+          node: {fileID: -7801291635870600888, guid: 3f85d1a56cbf8504290e17f994c3efcd, type: 2}
+          timeStamp: 3.311141
+        name: Player Normal Choices
+        verbose: 0
+      - runningNode: {fileID: 0}
+        queuedNodes:
+        - {fileID: 5993299369726616840, guid: e36a9b09a465b124384f95cf86eb8240, type: 2}
+        promise:
+          doneCallbacks: []
+        blackboard:
+          ints:
+            keys:
+            - index 25974
+            values: 00000000
+          bools:
+            keys: []
+            values: 
+          floats:
+            keys: []
+            values: []
+          strings:
+            keys: []
+            values: []
+          unityObjects:
+            keys: []
+            values: []
+          objects:
+            keys:
+            - currentElement 25974
+        recentlyRunNodes:
+        - name: Ran
+          node: {fileID: 5993299369726616840, guid: e36a9b09a465b124384f95cf86eb8240, type: 2}
+          timeStamp: 90.098976
+        - name: Ran
+          node: {fileID: 5213325956997613794, guid: e36a9b09a465b124384f95cf86eb8240, type: 2}
+          timeStamp: 90.098976
+        name: Update Characters Passively
+        verbose: 0
+    promises:
+      keys: []
+      values: []
+    flags:
+      keys: []
+      values: 
+    sceneIndex: -1
