@@ -1,6 +1,10 @@
 # Narramancer Visual Novel Example
-A Unity Project that uses [Narramancer](https://assetstore.unity.com/packages/tools/visual-scripting/narramancer-269301) to implement a Visual Novel Game
+A Unity Project that uses [Narramancer](https://assetstore.unity.com/packages/tools/visual-scripting/narramancer-269301) to implement a Visual Novel Game.<br>
 Included in this repo is Narramancer Apprentice, a free version of Narramancer that includes all of the features of the full version BUT prevents a full build from being made.
+
+# What is Narramancer?
+Narramancer is a node-based scripting system where saving and loading the game state are built-in.<br>
+For full documentation, please visit the official [Narramancer Website](https://narramancer.com/).
 
 # Visual Novel Features
 - Locations
