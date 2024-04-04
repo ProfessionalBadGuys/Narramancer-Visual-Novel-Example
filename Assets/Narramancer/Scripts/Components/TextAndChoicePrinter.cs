@@ -50,9 +50,9 @@ namespace Narramancer {
 
 		#region Text Printer
 
-		public override void SetText(string text, Action callback, bool clearPreviousText = true) {
+		public override void SetText(string text, Action callback, bool clearPreviousText = true, bool waitForContinue = true) {
 			this.StopCoroutineMaybe( scrollCoroutine);
-			base.SetText(text, callback, clearPreviousText);
+			base.SetText(text, callback, clearPreviousText, waitForContinue);
 
 			Canvas.ForceUpdateCanvases();
 			if (clearPreviousText) {
@@ -142,6 +142,9 @@ namespace Narramancer {
 			}
 			showingChoices = true;
 			parentCanvasGroup.interactable = true;
+
+			continueIndicator.SetActive(false);
+
 			ShowParentCanvas();
 
 			Canvas.ForceUpdateCanvases();
