@@ -113,6 +113,70 @@ MonoBehaviour:
   transform: {fileID: 0}
   gameObject: {fileID: 0}
   worldPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &-5277877907564760780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794a0abdd19a59d4fa863bc7620425f7, type: 3}
+  m_Name: List Count
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8226339080114926514}
+  position: {x: -520, y: -312}
+  ports:
+    keys:
+    - count
+    - List
+    values:
+    - _fieldName: count
+      _node: {fileID: -5277877907564760780}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: count
+        node: {fileID: 3365166403121181257}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: List
+      _node: {fileID: -5277877907564760780}
+      _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output Result
+        node: {fileID: 3382822317444574964}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+  listType:
+    typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    list: 0
+    canBeList: 1
+  count: 0
 --- !u!114 &-5007993680818496844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +234,7 @@ MonoBehaviour:
   m_Name: Get Component
   m_EditorClassIdentifier: 
   graph: {fileID: 8226339080114926514}
-  position: {x: 288, y: 80}
+  position: {x: 328, y: 88}
   ports:
     keys:
     - inputGameObject
@@ -272,7 +336,7 @@ MonoBehaviour:
   m_Name: Get Variable
   m_EditorClassIdentifier: 
   graph: {fileID: 8226339080114926514}
-  position: {x: -424, y: 88}
+  position: {x: -776, y: 88}
   ports:
     keys:
     - value
@@ -303,6 +367,95 @@ MonoBehaviour:
     variableName: instance
     variableKey: instance (NounInstance) 9baffc67-dac8-4101-9a15-298e33cdbb31
     inputOrOutput: 0
+--- !u!114 &-2483306550651066453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5325a7f510888f3438d0b72d927f2969, type: 3}
+  m_Name: Call Get game Object On Serializable Spawner Value
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8226339080114926514}
+  position: {x: -264, y: -504}
+  ports:
+    keys:
+    - Target
+    - Pass Through
+    - Output Result
+    values:
+    - _fieldName: Target
+      _node: {fileID: -2483306550651066453}
+      _typeQualifiedName: Narramancer.SerializableSpawner, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Pass Through
+        node: {fileID: 3382822317444574964}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: Pass Through
+      _node: {fileID: -2483306550651066453}
+      _typeQualifiedName: Narramancer.SerializableSpawner, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 1
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: Output Result
+      _node: {fileID: -2483306550651066453}
+      _typeQualifiedName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: targetGameObject
+        node: {fileID: 464152047567823787}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+  method:
+    className: SerializableSpawner
+    methodName: get_gameObject
+    returnTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    targetTypeName: Narramancer.SerializableSpawner, Narramancer, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    parameters: []
+    isExtension: 0
+    assemblyName: UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  type:
+    typeName: Narramancer.SerializableSpawner, Narramancer, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    list: 0
+    canBeList: 1
 --- !u!114 &-1628051218147212813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +578,7 @@ MonoBehaviour:
   m_Name: Spawn
   m_EditorClassIdentifier: 
   graph: {fileID: 8226339080114926514}
-  position: {x: 0, y: 0}
+  position: {x: -360, y: 8}
   ports:
     keys:
     - spawner
@@ -464,6 +617,9 @@ MonoBehaviour:
       - fieldName: targetGameObject
         node: {fileID: -5546048433831391063}
         reroutePoints: []
+      - fieldName: gameObject
+        node: {fileID: 2608259605841744341}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
@@ -481,7 +637,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: thisNode
-        node: {fileID: 5562160453648699501}
+        node: {fileID: 2608259605841744341}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -580,7 +736,7 @@ MonoBehaviour:
   - {fileID: 1623800531075416529}
   - {fileID: 7517428551085222598}
   - {fileID: 8750557986324843619}
-  panOffset: {x: -914.12, y: -165.69441}
+  panOffset: {x: -1593.7815, y: -239.3732}
   inputs: []
   outputs: []
   references:
@@ -649,6 +805,122 @@ MonoBehaviour:
     list: 0
     canBeList: 0
   includeChildren: 0
+--- !u!114 &464152047567823787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33521fd089853e41a28ab0e1ede064c, type: 3}
+  m_Name: Find Child Transform
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8226339080114926514}
+  position: {x: 216, y: -392}
+  ports:
+    keys:
+    - targetGameObject
+    - transformName
+    - transform
+    - gameObject
+    - worldPosition
+    values:
+    - _fieldName: targetGameObject
+      _node: {fileID: 464152047567823787}
+      _typeQualifiedName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output Result
+        node: {fileID: -2483306550651066453}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: transformName
+      _node: {fileID: 464152047567823787}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: result
+        node: {fileID: 3365166403121181257}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: transform
+      _node: {fileID: 464152047567823787}
+      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: gameObject
+      _node: {fileID: 464152047567823787}
+      _typeQualifiedName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: worldPosition
+      _node: {fileID: 464152047567823787}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: targetPosition
+        node: {fileID: 2608259605841744341}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+  targetGameObject: {fileID: 0}
+  transformName: Character Position 1
+  transform: {fileID: 0}
+  gameObject: {fileID: 0}
+  worldPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1623800531075416529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,6 +1056,316 @@ MonoBehaviour:
   thenRunNode: {fileID: 0}
   listType:
     typeName: Narramancer.NounInstance, Narramancer, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    list: 0
+    canBeList: 1
+--- !u!114 &2608259605841744341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb40388f05f98747833bc992bc533e0, type: 3}
+  m_Name: Translate Game Object
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8226339080114926514}
+  position: {x: 344, y: -88}
+  ports:
+    keys:
+    - gameObject
+    - targetPosition
+    - duration
+    - moveSpeed
+    - thenRunNode
+    - thisNode
+    values:
+    - _fieldName: gameObject
+      _node: {fileID: 2608259605841744341}
+      _typeQualifiedName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: gameObject
+        node: {fileID: -91669785863875422}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: targetPosition
+      _node: {fileID: 2608259605841744341}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: worldPosition
+        node: {fileID: 464152047567823787}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: duration
+      _node: {fileID: 2608259605841744341}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: moveSpeed
+      _node: {fileID: 2608259605841744341}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: thenRunNode
+      _node: {fileID: 2608259605841744341}
+      _typeQualifiedName: Narramancer.RunnableNode, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: thisNode
+        node: {fileID: 5562160453648699501}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: thisNode
+      _node: {fileID: 2608259605841744341}
+      _typeQualifiedName: Narramancer.RunnableNode, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: thenRunNode
+        node: {fileID: -91669785863875422}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+  thenRunNode: {fileID: 0}
+  gameObject: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  moveType: 2
+  duration: 1
+  moveSpeed: 60
+  wait: 1
+--- !u!114 &3365166403121181257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c772190ca5ff9dd4f830b63cd5d0a84b, type: 3}
+  m_Name: Format String
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8226339080114926514}
+  position: {x: -264, y: -344}
+  ports:
+    keys:
+    - text
+    - result
+    - count
+    values:
+    - _fieldName: text
+      _node: {fileID: 3365166403121181257}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: result
+      _node: {fileID: 3365166403121181257}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: transformName
+        node: {fileID: 464152047567823787}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: count
+      _node: {fileID: 3365166403121181257}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: count
+        node: {fileID: -5277877907564760780}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+  width: 400
+  height: -1
+  text: Character Position {count}
+  result: 
+--- !u!114 &3382822317444574964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5325a7f510888f3438d0b72d927f2969, type: 3}
+  m_Name: Call Get All Game Objects On Serializable Spawner Value
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8226339080114926514}
+  position: {x: -984, y: -456}
+  ports:
+    keys:
+    - Target
+    - Pass Through
+    - Output Result
+    values:
+    - _fieldName: Target
+      _node: {fileID: 3382822317444574964}
+      _typeQualifiedName: Narramancer.SerializableSpawner, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: value
+        node: {fileID: 8280219741806546234}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: Pass Through
+      _node: {fileID: 3382822317444574964}
+      _typeQualifiedName: Narramancer.SerializableSpawner, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Target
+        node: {fileID: -2483306550651066453}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 1
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: Output Result
+      _node: {fileID: 3382822317444574964}
+      _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: List
+        node: {fileID: -5277877907564760780}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+  method:
+    className: SerializableSpawner
+    methodName: GetAllGameObjects
+    returnTypeName: System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089
+    targetTypeName: Narramancer.SerializableSpawner, Narramancer, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    parameters: []
+    isExtension: 0
+    assemblyName: Narramancer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  type:
+    typeName: Narramancer.SerializableSpawner, Narramancer, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     list: 0
     canBeList: 1
@@ -965,7 +1547,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: thenRunNode
-        node: {fileID: -91669785863875422}
+        node: {fileID: 2608259605841744341}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -1039,7 +1621,7 @@ MonoBehaviour:
   m_Name: Get Variable
   m_EditorClassIdentifier: 
   graph: {fileID: 8226339080114926514}
-  position: {x: -360, y: -40}
+  position: {x: -760, y: -40}
   ports:
     keys:
     - value
@@ -1157,7 +1739,7 @@ MonoBehaviour:
   m_Name: Root
   m_EditorClassIdentifier: 
   graph: {fileID: 8226339080114926514}
-  position: {x: -280, y: -104}
+  position: {x: -728, y: -136}
   ports:
     keys:
     - runNode
@@ -1206,7 +1788,14 @@ MonoBehaviour:
   - {fileID: 9085509226794107526}
   - {fileID: -4101521846251629082}
   - {fileID: 6086794068346787609}
-  panOffset: {x: -273.03674, y: -190.98541}
+  - {fileID: 2608259605841744341}
+  - {fileID: 464152047567823787}
+  - {fileID: 3382822317444574964}
+  - {fileID: -5277877907564760780}
+  - {fileID: -2483306550651066453}
+  - {fileID: 3365166403121181257}
+  - {fileID: 8280219741806546234}
+  panOffset: {x: 206.87177, y: 279.4084}
   inputs:
   - type:
       typeName: Narramancer.NounInstance, Narramancer, Version=0.0.0.0, Culture=neutral,
@@ -1219,6 +1808,50 @@ MonoBehaviour:
   outputs: []
   references:
     objects: []
+--- !u!114 &8280219741806546234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 197d35c5814eeff429acbd127f4b19c3, type: 3}
+  m_Name: Get Variable
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8226339080114926514}
+  position: {x: -1224, y: -456}
+  ports:
+    keys:
+    - value
+    values:
+    - _fieldName: value
+      _node: {fileID: 8280219741806546234}
+      _typeQualifiedName: Narramancer.SerializableSpawner, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Target
+        node: {fileID: 3382822317444574964}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+  variable:
+    scope: 0
+    scene: SampleScene
+    variableId: f943b97f-81e1-4850-bc1d-a18c74c90e39
+    variableName: Character Spawner.SerializableSpawner
+    variableKey: Character Spawner.SerializableSpawner (SerializableSpawner) f943b97f-81e1-4850-bc1d-a18c74c90e39
+    inputOrOutput: 0
 --- !u!114 &8750557986324843619
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,8 +15,8 @@ MonoBehaviour:
   uid:
     Value: c6fbb8b3-aa03-4bde-aa1e-48f31f3858d7
   displayName:
-    activated: 0
-    value: 
+    activated: 1
+    value: in the bedroom
   properties: []
   stats: []
   relationships:
@@ -46,6 +46,7 @@ MonoBehaviour:
       typeName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       list: 0
+      canBeList: 1
     name: background
     id: 75c6e3c5-32d8-46ec-92c1-029a1357ac34
     assignment:
@@ -65,6 +66,7 @@ MonoBehaviour:
       typeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       list: 0
+      canBeList: 1
     name: music
     id: 75c6e3c5-32d8-46ec-92c1-029a1357ac34
     assignment:

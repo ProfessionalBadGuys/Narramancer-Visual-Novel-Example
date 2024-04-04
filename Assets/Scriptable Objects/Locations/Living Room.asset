@@ -15,8 +15,8 @@ MonoBehaviour:
   uid:
     Value: c9413d84-14f1-4362-993e-9a3c78bca7c8
   displayName:
-    activated: 0
-    value: 
+    activated: 1
+    value: in the living room
   properties: []
   stats: []
   relationships:
@@ -49,6 +49,7 @@ MonoBehaviour:
       typeName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       list: 0
+      canBeList: 1
     name: background
     id: 04f207e6-1182-4fa1-af70-bbe97cfad41c
     assignment:
@@ -68,6 +69,7 @@ MonoBehaviour:
       typeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       list: 0
+      canBeList: 1
     name: music
     id: 04f207e6-1182-4fa1-af70-bbe97cfad41c
     assignment:

@@ -184,6 +184,201 @@ MonoBehaviour:
       dynamicValueInt: 0
       dynamicValueFloat: 0
   runNode: {fileID: 0}
+--- !u!114 &-8559921835249672655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69be34c7882f34647b9a2a6c6984b1a8, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 3208, y: 736}
+  ports:
+    keys:
+    - thisChoice
+    - thenRunNode
+    - enabled
+    - displayText
+    values:
+    - _fieldName: thisChoice
+      _node: {fileID: -8559921835249672655}
+      _typeQualifiedName: Narramancer.ChoiceNode, Narramancer, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: choiceNodes
+        node: {fileID: -2820680300740825578}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: thenRunNode
+      _node: {fileID: -8559921835249672655}
+      _typeQualifiedName: Narramancer.RunnableNode, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: thisNode
+        node: {fileID: -8208191836866492392}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: enabled
+      _node: {fileID: -8559921835249672655}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: displayText
+      _node: {fileID: -8559921835249672655}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+  thisChoice: {fileID: 0}
+  thenRunNode: {fileID: 0}
+  enabled: 1
+  displayText: Tell them to leave
+  customColor:
+    activated: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+  displayWhenDisabled: 0
+--- !u!114 &-8208191836866492392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99fe5d07985baae4290ba69e8e6ba3d9, type: 3}
+  m_Name: 'Run ActionVerb: Hide Character'
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 3967.8162, y: 815.1826}
+  ports:
+    keys:
+    - actionVerb
+    - thenRunNode
+    - thisNode
+    - character
+    values:
+    - _fieldName: actionVerb
+      _node: {fileID: -8208191836866492392}
+      _typeQualifiedName: Narramancer.ActionVerb, Narramancer, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: thenRunNode
+      _node: {fileID: -8208191836866492392}
+      _typeQualifiedName: Narramancer.RunnableNode, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: thisNode
+        node: {fileID: 909840429110685356}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: thisNode
+      _node: {fileID: -8208191836866492392}
+      _typeQualifiedName: Narramancer.RunnableNode, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: thenRunNode
+        node: {fileID: -8559921835249672655}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: character
+      _node: {fileID: -8208191836866492392}
+      _typeQualifiedName: Narramancer.NounInstance, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: characterPassThrough
+        node: {fileID: 3266702407700641326}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+  thenRunNode: {fileID: 0}
+  actionVerb: {fileID: 11400000, guid: ce3b2e8011db0554585d2e6cb60d5ddd, type: 2}
 --- !u!114 &-8145506616164182049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,6 +1158,9 @@ MonoBehaviour:
       - fieldName: thisChoice
         node: {fileID: 3169359170520364966}
         reroutePoints: []
+      - fieldName: thisChoice
+        node: {fileID: -8559921835249672655}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
@@ -1358,7 +1556,9 @@ MonoBehaviour:
   - {fileID: 3169359170520364966}
   - {fileID: 811094925321915205}
   - {fileID: 8492815664775476148}
-  panOffset: {x: -1015.43475, y: 55.556087}
+  - {fileID: -8559921835249672655}
+  - {fileID: -8208191836866492392}
+  panOffset: {x: -3648.7556, y: -695.7884}
   inputs: []
   outputs: []
   references:
@@ -1573,6 +1773,9 @@ MonoBehaviour:
       connections:
       - fieldName: thenRunNode
         node: {fileID: 3169359170520364966}
+        reroutePoints: []
+      - fieldName: thenRunNode
+        node: {fileID: -8208191836866492392}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -2107,6 +2310,9 @@ MonoBehaviour:
       connections:
       - fieldName: character
         node: {fileID: 8492815664775476148}
+        reroutePoints: []
+      - fieldName: character
+        node: {fileID: -8208191836866492392}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3152,7 +3358,7 @@ MonoBehaviour:
   m_Name: 'Execute Graph: Get Present Characters'
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 872, y: 456}
+  position: {x: 808, y: 360}
   ports:
     keys:
     - characters

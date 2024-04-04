@@ -15,8 +15,8 @@ MonoBehaviour:
   uid:
     Value: b473a09a-415f-49cd-bb37-00195c35c0ff
   displayName:
-    activated: 0
-    value: 
+    activated: 1
+    value: outside the cabin
   properties: []
   stats: []
   relationships:
@@ -46,6 +46,7 @@ MonoBehaviour:
       typeName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       list: 0
+      canBeList: 1
     name: background
     id: f4749a51-3538-41a6-8c87-eefd4c0e6e33
     assignment:
@@ -65,6 +66,7 @@ MonoBehaviour:
       typeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       list: 0
+      canBeList: 1
     name: music
     id: f4749a51-3538-41a6-8c87-eefd4c0e6e33
     assignment:
