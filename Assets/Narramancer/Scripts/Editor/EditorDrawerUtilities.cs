@@ -117,6 +117,27 @@ namespace Narramancer {
 			}
 		}
 
+		public static void ExtractChildNodeGraphField(UnityEngine.Object targetObject) {
+			if (GUILayout.Button("Extract into Asset")) {
+				var nodeGraph = targetObject as XNode.NodeGraph;
+				var path = EditorUtility.SaveFilePanelInProject("Save child asset as main asset", nodeGraph.name, "asset", "Choose a folder and name for the new asset");
+				if (path.IsNotNullOrEmpty()) {
+
+					AssetDatabase.RemoveObjectFromAsset(nodeGraph);
+					AssetDatabase.CreateAsset(nodeGraph, path);
+
+					foreach (var node in nodeGraph.nodes) {
+						AssetDatabase.RemoveObjectFromAsset(node);
+						AssetDatabase.AddObjectToAsset(node, path);
+					}
+					EditorUtility.SetDirty(nodeGraph);
+					AssetDatabase.SaveAssets();
+					AssetDatabase.Refresh();
+				}
+				
+			}
+		}
+
 		public static ColorScope Color(Color? color = null) {
 			var scope = new ColorScope() {
 				originalColor = GUI.color

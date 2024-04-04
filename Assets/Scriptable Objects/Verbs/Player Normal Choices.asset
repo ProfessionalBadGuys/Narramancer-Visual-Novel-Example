@@ -303,6 +303,7 @@ MonoBehaviour:
     - thenRunNode
     - thisNode
     - character
+    - characterPassThrough
     values:
     - _fieldName: actionVerb
       _node: {fileID: -8208191836866492392}
@@ -368,6 +369,22 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 1
+      _sameLine: 0
+      _hideLabel: 0
+      dynamicValueUnityObject: {fileID: 0}
+      dynamicValueBool: 0
+      dynamicValueString: 
+      dynamicValueInt: 0
+      dynamicValueFloat: 0
+    - _fieldName: characterPassThrough
+      _node: {fileID: -8208191836866492392}
+      _typeQualifiedName: Narramancer.NounInstance, Narramancer, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
       _typeConstraint: 1
       _dynamic: 1
       _sameLine: 0

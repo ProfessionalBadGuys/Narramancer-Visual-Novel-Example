@@ -1143,7 +1143,7 @@ MonoBehaviour:
       canBeList: 1
     name: character
     id: c908ddba-12a6-4f51-9909-994723c3403b
-    passThrough: 0
+    passThrough: 1
   outputs: []
   references:
     objects: []
