@@ -22,3 +22,5 @@ This example project uses a few assets as placeholder
 - Music is from [MuchkinMusic](https://www.reddit.com/user/MuchkinMusic/), specifically [these tracks](https://www.reddit.com/r/gameassets/comments/1agiv2j/28_free_to_use_electronic_tracks/).
 - Character sprites are from [Potat0Master](https://potat0master.itch.io/): [Ryoko](https://potat0master.itch.io/free-character-sprite-for-visual-novels-ryoko-madoka) and [Nozomi](https://potat0master.itch.io/free-character-sprite-for-visua-novel-nozomi).
 - Background sprites are also from [Potat0Master](https://potat0master.itch.io/): [Woods & Cabin Pack](https://potat0master.itch.io/free-visual-novel-backgrounds-woods-cabin-pack).
+- Sound Effects
+    - Knock on the door 2 by deleted_user_4772965 -- https://freesound.org/s/256512/ -- License: Creative Commons 0
