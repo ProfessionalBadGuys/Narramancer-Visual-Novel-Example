@@ -557,7 +557,7 @@ MonoBehaviour:
   - {fileID: -2483306550651066453}
   - {fileID: 3365166403121181257}
   - {fileID: 8280219741806546234}
-  panOffset: {x: -53.53774, y: -93.97902}
+  panOffset: {x: 23.8492, y: -134.31581}
   inputs:
   - type:
       typeName: Narramancer.NounInstance, Narramancer, Version=0.0.0.0, Culture=neutral,
